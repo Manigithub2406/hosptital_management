@@ -1,0 +1,32 @@
+<!-- select_category.html -->
+ {% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Category</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Select Patient Category</h2>
+        <form method="post" action="{% url 'doctor_view' category='selected_category' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="category">Patient Category</label>
+                <select id="category" name="category" class="form-control">
+                    <option value="general_medicine">General Medicine</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="surgery">Surgery</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="gynecology">Gynecology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="oncology">Oncology</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Select</button>
+        </form>
+    </div>
+</body>
+</html>
