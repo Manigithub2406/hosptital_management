@@ -1,0 +1,48 @@
+
+{% extends "base1.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="home-page" style="position: relative; min-height: 100vh; background: url('{% static 'images/background.jpg' %}') no-repeat center center fixed; background-size: cover; style="padding-top: 80px;"">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);">
+        <div class="content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
+            <h1 class="display-4"style="font-family:fantasy;font-size:5vw">WELCOME TO MANI HOSPITALS</h1>
+            <p class="lead">Providing exceptional care for all your medical needs.</p>
+            <hr class="my-4">
+            <p>Our hospital is equipped with state-of-the-art facilities and staffed by highly trained professionals.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/emergency.jpg' %}" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Emergency Care</h5>
+                    <p class="card-text">Our emergency department is available 24/7 to handle urgent medical situations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/specialcare.jpg' %}" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Specialized Services</h5>
+                    <p class="card-text">We offer a range of services, including cardiology, oncology, and orthopedics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{% static 'images/wellness.jpg' %}" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Wellness Programs</h5>
+                    <p class="card-text">Join wellness programs to stay healthy.We give various classes and workshops.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

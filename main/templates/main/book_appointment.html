@@ -1,0 +1,9 @@
+<!-- main/templates/main/book_appointment.html -->
+
+{% extends "base1.html" %}
+
+{% block content %}
+<h1>Book an Appointment</h1>
+<p>Please visit our registration page to book an appointment.</p>
+<a class="btn btn-primary" href="{% url 'registration_create' %}">Go to Registration</a>
+{% endblock %}
