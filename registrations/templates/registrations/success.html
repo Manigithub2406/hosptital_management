@@ -1,0 +1,10 @@
+<!-- registrations/templates/registrations/success.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert alert-success" role="alert">
+    Registration successful! Thank you for booking an appointment with us.
+</div>
+<a class="btn btn-primary" href="{% url 'home' %}">Return to Home</a>
+{% endblock %}

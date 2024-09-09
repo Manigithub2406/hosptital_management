@@ -1,0 +1,44 @@
+<!-- registrations/templates/registrations/registration_form.html -->
+
+{% extends "base.html" %}
+<!-- registrations/templates/registrations/registration_form.html -->
+
+{% load form_tags %}
+
+
+{% block content %}
+    <h1>{{ form.instance.pk|yesno:"Edit Registration,New Registration" }}</h1>
+    <form method="post" class="form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_first_name">First Name</label>
+            {{ form.first_name|add_class:"form-control" }}
+        </div>
+        <div class="form-group">
+            <label for="id_last_name">Last Name</label>
+            {{ form.last_name|add_class:"form-control" }}
+        </div>
+        <div class="form-group">
+            <label for="id_age">Age</label>
+            {{ form.age|add_class:"form-control" }}
+        </div>
+        <div class="form-group">
+            <label for="id_email">Email</label>
+            {{ form.email|add_class:"form-control" }}
+        </div>
+        <div class="form-group">
+            <label for="id_phone_number">Phone Number</label>
+            {{ form.phone_number|add_class:"form-control" }}
+        </div>
+        <div class="form-group">
+            <label for="id_description">Description</label>
+            {{ form.description }}
+        </div>
+        <div class="form-group">
+            <label for="id_category">Category</label>
+            {{ form.category }}
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="{% url 'registration_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+{% endblock %}
