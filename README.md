@@ -42,12 +42,12 @@ This is a web-based **Hospital Management System** built using Django that allow
 
 2. Navigate into the project directory:
    ```bash
-   cd hospital-management-system
+   cd hospital_management
    ```
 
 3. Install dependencies using `pip`:
    ```bash
-   pip install -r requirements.txt
+   pip install (requirements)
    ```
 
 4. Apply database migrations:
