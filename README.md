@@ -37,7 +37,7 @@ This is a web-based **Hospital Management System** built using Django that allow
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/hospital-management-system.git
+   git clone https://github.com/Manigithub2406/hospital_management.git
    ```
 
 2. Navigate into the project directory:
