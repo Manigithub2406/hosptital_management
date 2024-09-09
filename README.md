@@ -1,6 +1,4 @@
-Here's a `README.md` file for your Hospital Management App:
 
----
 
 # Hospital Management System
 
@@ -110,5 +108,3 @@ To customize the categories or any functionality:
 - Improving security features and implementing two-factor authentication
 
 ---
-
-This `README.md` provides a comprehensive guide to understanding, setting up, and running your Hospital Management System. You can modify it as needed!
